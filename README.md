@@ -45,6 +45,7 @@
   *   <a href="#stock_chart">股票图表示例</a>
 
 <h2 id="chart_example">图表示例</h2>
+
 | 样例一 | 样例二
 |------------|------------
 | ![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/LineChart1.GIF?raw=true) |![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/BarChart1.GIF?raw=true)
@@ -55,8 +56,10 @@
 | 样例七 | 样例八
 | ![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/RadarChat1.PNG?raw=true) |![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/ProgressChart1.GIF?raw=true)
 
-## 折线图与柱状图
-### 折线图柱状图支持特性
+<h2 id="line_and_bar">折线图与柱状图</h2>
+
+<h3 id="linebar_features">折线图柱状图支持特性</h3>
+ 
 - 支持数据拉伸、并列、居中对齐、堆叠、正负堆叠(同级数据叠加)、指定数据环绕。
 - 支持折线区域填充颜色以及渐变色。
 - 支持自定义折线或者柱状图文字字体、颜色、偏移量。
@@ -67,11 +70,14 @@
 - 支持自动计算Y轴极大值极小值、可设置极大极小值偏移比率。
 - 支持自定义Y轴极大值极小值。
 
-### 折线图柱状图数据结构
+<h4 id="line_bar_structure">折线图柱状图数据结构</h4>
+
 ![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/LineBarUML.png?raw=true)
 
-### 折线与柱状图DataSet
-#### BaseLineBarSet
+<h3 id="line_bar_set">折线与柱状图DataSet</h3>
+
+<h4 id="base_line_bar_set">BaseLineBarSet</h4>
+
 ```objective-c
 /**
  * 折线与柱状图内边距

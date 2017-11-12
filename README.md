@@ -750,21 +750,25 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
 @property (nonatomic, strong) CenterLableData * lable;
 ```
 
-## 雷达图
-### 雷达图支持特性:
+<h2 id="radar_chart">雷达图</h2>
+
+<h3 id="radar_features">雷达图支持特性:</h3>
+
 - 支持自定义雷达图背景，圆环或者多边形。
 - 支持自定义文字(字体，颜色，偏移量)。
 - 支持自定义背景线(颜色，现款)。
 - 支持雷达内容渐变色。
 
-### 雷达图数据结构:
+<h3 id="radar_structure">雷达图数据结构:</h3>
+
 ![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/RadarUML.png?raw=true)
 
-### 雷达图属性列表:
+<h3 id="radar_ivar">雷达图属性列表:</h3>
 
 > 注意：雷达图需要先制定各个维度最大值以及标题，详见`RadarIndicatorData`。
 
-#### RadarDataSet
+<h4 id="radar_data">RadarDataSet</h4>
+
 ```objective-c
 /**
  * 图层数据
@@ -821,7 +825,8 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
  */
 @property (nonatomic, strong) UIColor * stringColor;
 ```
-#### RadarIndicatorData
+<h4 id="">RadarIndicatorData</h4>
+
 ```objective-c
 /**
  * 标题
@@ -833,8 +838,8 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
  */
 @property (nonatomic, assign) CGFloat max;
 ```
+<h4 id="">RadarData</h4>
 
-#### RadarData
 ```objective-c
 /**
  * 线宽
@@ -886,18 +891,23 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
 @property (nonatomic, strong) NSArray * gradientColors;
 ```
 
-## 进度条图
-### 进度条图支持特性:
+<h2 id="progress_chart">进度条图</h2>
+
+<h3 id="progress_features">进度条图支持特性:</h3>
+
 - 支持自定义启示角度
 - 支持自定义文字(字体、颜色)。
 - 支持更新动画。
 - 支持渐变色。
 
-### 进度条图数据结构:
+<h3 id="progress_structure">进度条图数据结构:</h3>
+
 ![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/ProgressUML.png?raw=true)
 
-###  进度条图属性列表:
-#### ProgressData
+<h3 id="progress_ivar">进度条图属性列表:</h3>
+
+<h4 id="progress_data">ProgressData</h4>
+
 ```objective-c
 /**
  * 最大值
@@ -972,13 +982,15 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
  */
 @property (nonatomic, strong) ProgressLable * centerLable;
 ```
-#### ProgressData:NumberData
+
+<h4 id="progress_lable">ProgressLable:NumberData</h4>
+
 ```objective-c
 --
 ```
 
+<h2 id="stock_chart">股票图表示例</h2>
 
-## 股票图表示例
 | 配色白 | 配色黑
 |------------|------------
 | ![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/StockChart1.PNG?raw=true) |![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/IMG_2939.jpeg?raw=true)

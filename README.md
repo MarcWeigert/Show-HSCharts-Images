@@ -117,7 +117,8 @@
 
 > 注意：BaseLineBarSet 中属性`insets` 为数据背景网格边框的内边距。
 
-#### BarDataSet:BaseLineBarSet
+<h4 id="bar_set">BarDataSet:BaseLineBarSet</h4>
+
 ```objective-c
 /**
  * 柱状图颜色
@@ -145,15 +146,20 @@
  */
 @property (nonatomic, strong) UIColor * midLineColor;
 ```
-#### LineDataSet:BaseLineBarSet
+
+<h4 id="line_set">LineDataSet:BaseLineBarSet</h4>
+
 ```objective-c
 /**
  * 折线图数据数组
  */
 @property (nonatomic, strong) NSArray <LineData *> * lineAry;
 ```
-### 折线与柱状图Data
-#### BaseLineBarData
+
+<h3 id="line_bar_data">折线与柱状图Data</h3>
+
+<h4 id="base_line_bar_data">BaseLineBarData</h4>
+
 ```objective-c
 /**
  * 柱状图, 折线定标器
@@ -232,7 +238,9 @@ CG_EXTERN CGPoint const GGRatioCenterLeft;
 CG_EXTERN CGPoint const GGRatioCenter;
 CG_EXTERN CGPoint const GGRatioCenterRight;
 ```
-#### LineData:BaseLineBarData
+
+<h4 id="line_data">LineData:BaseLineBarData</h4>
+
 ```objective-c
 #pragma mark - 折线配置
 /**
@@ -291,7 +299,9 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
  */
 @property (nonatomic, strong) NSArray <NSNumber *> *locations;
 ```
-#### BarData:BaseLineBarData
+
+<h4 id="bar_data">BarData:BaseLineBarData</h4>
+
 ```objective-c
 /**
  * 柱状图边框颜色
@@ -313,8 +323,10 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
  */
 @property (nonatomic, assign) CGFloat barWidth;
 ```
-### 背景与轴:
-#### LineBarGird
+<h3 id="back_grid_axis">背景与轴:</h3>
+
+<h4 id="line_bar_grid">LineBarGird</h4>
+
 ```objective-c
 /**
  * 轴线结构体
@@ -372,7 +384,9 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
  */
 @property (nonatomic, assign) BOOL showQueryLable;
 ```
-#### YAxis
+
+<h4 id="y_axis">YAxis</h4>
+
 ```objective-c
 /**
  * 轴最大值
@@ -435,7 +449,9 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
  */
 @property (nonatomic, strong) AxisName * name;
 ```
-#### XAxis
+
+<h4 id="x_axis">XAxis</h4>
+
 ```objective-c
 
 /**
@@ -485,8 +501,10 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
 @property (nonatomic, assign) BOOL showSplitLine;
 ```
 
-## 饼图
-### 饼图支持特性:
+<h2 id="pie_chart">饼图</h2>
+
+<h3 id="pie_features">饼图支持特性:</h3>
+
 - 支持渐变色。
 - 支持点击。
 - 支持数据更新渐变动画。
@@ -495,11 +513,14 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
 - 支持扇形内部，与外部文字(字体，颜色，偏移量)。
 - 支持扇形外线。(直接展示，点击展示)。
 
-### 饼图数据结构:
+<h3 id="pie_structure">饼图数据结构:</h3>
+
 ![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/PieUML.png?raw=true)
 
-### 饼图属性列表:
-#### PieDataSet
+<h3 id="pie_ivar">饼图属性列表:</h3>
+
+<h4 id="pie_data_set">PieDataSet</h4>
+
 ```objective-c
 /**
  * 扇形图数组
@@ -537,7 +558,9 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
 @property (nonatomic, assign) BOOL updateNeedAnimation;
 ```
 
-#### PieData
+<h4 id="pie_data">PieData</h4>
+
+
 ```objective-c
 /**
  * 折线图定标器
@@ -612,7 +635,8 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
 > 注意：PieData 中属性`radiusRange`  为结构体 `struct GGRadiusRange
 { CGFloat inRadius; CGFloat outRadius; }`，要求 outRadius需要包含inRadius。详见类`GGPie` 。
 
-#### NumberData
+<h4 id="number_data">NumberData</h4>
+
 ```objective-c
 /**
  * 外部文字字体颜色
@@ -651,7 +675,9 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
 @property (nonatomic, copy) NSAttributedString *(^attrbuteStringValueBlock)(CGFloat value);
 ```
 
-#### InnerLable:NumberData
+<h4 id="inner_lable">InnerLable:NumberData</h4>
+
+
 ```objective-c
 /**
  * 扇形图富文本字符串
@@ -659,7 +685,9 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
 @property (nonatomic, copy) NSAttributedString * (^attributeStringBlock)(NSInteger index, CGFloat value, CGFloat ratio);
 ```
 
-#### OutSideLable:InnerLable
+<h4 id="outside_lable">OutSideLable:InnerLable</h4>
+
+
 ```objective-c
 /**
  * 线宽度
@@ -692,14 +720,19 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
 @property (nonatomic, copy) UIColor * (^lineColorsBlock)(NSInteger index, CGFloat ratio);
 ```
 
-#### CenterLableData:NumberData
+<h4 id="center_lable_data">CenterLableData:NumberData</h4>
+
+
 ```objective-c
 /**
  * 中间数字
  */
 @property (nonatomic, assign) CGFloat number;
 ```
-#### CenterData
+
+<h4 id="center_data">CenterData</h4>
+
+
 ```objective-c
 /**
  * 填充颜色

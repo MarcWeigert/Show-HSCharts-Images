@@ -767,7 +767,7 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
 
 > 注意：雷达图需要先制定各个维度最大值以及标题，详见`RadarIndicatorData`。
 
-<h4 id="radar_data">RadarDataSet</h4>
+<h4 id="radar_data_set">RadarDataSet</h4>
 
 ```objective-c
 /**

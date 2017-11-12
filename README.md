@@ -44,7 +44,7 @@
             *   <a href="#progress_lable">ProgressLable:NumberData</a>
   *   <a href="#stock_chart">股票图表示例</a>
 
-<h1 id="chart_example">图表示例</h1>
+<h2 id="chart_example">图表示例</h2>
 | 样例一 | 样例二
 |------------|------------
 | ![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/LineChart1.GIF?raw=true) |![enter image description here](https://github.com/MarcWeigert/Show-HSCharts-Images/blob/master/GGCharts/BarChart1.GIF?raw=true)

@@ -29,15 +29,15 @@
             *   <a href="#outside_lable">OutSideLable:InnerLable</a>
             *   <a href="#center_lable_data">CenterLableData:NumberData</a>
             *   <a href="#center_data">CenterData</a>
-  *   <a href="#radar_chat">雷达图</a>
-		*   <a href="#radar_features">雷达图支持特性:</a>
+  *   <a href="#radar_chart">雷达图</a>
+        *   <a href="#radar_features">雷达图支持特性:</a>
         *   <a href="#radar_structure">雷达图数据结构:</a>
         *   <a href="#radar_ivar">雷达图属性列表:</a>
             *   <a href="#radar_data_set">RadarDataSet</a>
             *   <a href="#radar_indicator_data">RadarIndicatorData</a>
             *   <a href="#radar_data">RadarData</a>
   *   <a href="#progress_chart">进度条图</a>
-		*   <a href="#progress_features">进度条图支持特性:</a>
+        *   <a href="#progress_features">进度条图支持特性:</a>
         *   <a href="#progress_structure">进度条图数据结构:</a>
         *   <a href="#progress_ivar">进度条图属性列表:</a>
             *   <a href="#progress_data">ProgressData</a>
@@ -825,7 +825,7 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
  */
 @property (nonatomic, strong) UIColor * stringColor;
 ```
-<h4 id="">RadarIndicatorData</h4>
+<h4 id="radar_indicator_data">RadarIndicatorData</h4>
 
 ```objective-c
 /**
@@ -838,7 +838,7 @@ CG_EXTERN CGPoint const GGRatioCenterRight;
  */
 @property (nonatomic, assign) CGFloat max;
 ```
-<h4 id="">RadarData</h4>
+<h4 id="radar_data">RadarData</h4>
 
 ```objective-c
 /**
